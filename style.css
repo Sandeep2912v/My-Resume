@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Resume Container */
+.resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #6A1B9A, #AB47BC);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.header-text {
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffd700;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column,
+.right-column {
+    width: 100%;
+    padding: 20px;
+}
+
+main .right-column .section .project-card p a {
+    color: #6A1B9A;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .left-column {
+        width: 35%;
+    }
+
+    .right-column {
+        width: 65%;
+    }
+}
+
+/* Sections */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 20px;
+    color: #6A1B9A;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.section h2 i {
+    margin-right: 8px;
+    color: #AB47BC;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Project Card */
+.project-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
