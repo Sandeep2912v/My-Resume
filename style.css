@@ -55,11 +55,13 @@ body {
 .header h1 {
     font-size: 32px;
     font-weight: bold;
+    /* text-align: center; */
 }
 
 .header p {
     font-size: 18px;
     margin-top: 10px;
+    /* text-align: center; */
 }
 
 .social-links a {
@@ -91,7 +93,12 @@ main .right-column .section .project-card p a {
     font-weight: 700;
 }
 
-@media (min-width: 768px) {
+.resume-container .main-content .left-column .contact-section ul a{
+    text-decoration: none;
+    color: #333;
+}
+
+@media only screen and (min-width: 768px) {
     .left-column {
         width: 35%;
     }
@@ -141,4 +148,24 @@ ul li {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 450px){
+    .profile-img img {
+        margin-right: 0px;
+    }
+
+    .header h1 {
+        text-align: center;
+    }
+    
+    .header p {
+        text-align: center;
+    }
+
+    .header .header-text .social-links{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
